@@ -46,5 +46,4 @@
     http://www.peterbe.com/plog/my-favorite-go-multiplexer
     搜索引擎，许多blog，不能详尽者，在此一并感谢!
 
-##My Prject Page
-    http://yujinliang.github.io/wechat
+
