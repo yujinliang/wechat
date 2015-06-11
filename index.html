@@ -1,0 +1,110 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <title>Wechat by yujinliang</title>
+    <link rel="stylesheet" href="stylesheets/styles.css">
+    <link rel="stylesheet" href="stylesheets/github-dark.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+    <script src="javascripts/main.js"></script>
+    <!--[if lt IE 9]>
+      <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+
+  </head>
+  <body>
+
+      <header>
+        <h1>Wechat</h1>
+        <p>Golang 微信公众号 SDK</p>
+      </header>
+
+      <div id="banner">
+        <span id="logo"></span>
+
+        <a href="https://github.com/yujinliang/wechat" class="button fork"><strong>View On GitHub</strong></a>
+        <div class="downloads">
+          <span>Downloads:</span>
+          <ul>
+            <li><a href="https://github.com/yujinliang/wechat/zipball/master" class="button">ZIP</a></li>
+            <li><a href="https://github.com/yujinliang/wechat/tarball/master" class="button">TAR</a></li>
+          </ul>
+        </div>
+      </div><!-- end banner -->
+
+    <div class="wrapper">
+      <nav>
+        <ul></ul>
+      </nav>
+      <section>
+        <h1>
+<a id="golang-go语言-微信公众号-sdk" class="anchor" href="#golang-go%E8%AF%AD%E8%A8%80-%E5%BE%AE%E4%BF%A1%E5%85%AC%E4%BC%97%E5%8F%B7-sdk" aria-hidden="true"><span class="octicon octicon-link"></span></a>golang go语言 微信公众号 SDK</h1>
+
+<pre><code>&gt;&gt;本人奔四了，老菜鸟程序员，用的语言较杂，皆不精，然对技术摸索多年未成系统，虽用C++开发多年，却始终不得其要，心力憔悴，
+几欲放弃，无奈饭碗不敢丢弃，苦寻大道至简之语言，绝望之际，遂意退出IT圈，终遇go语言，重燃希望之火，正努力学习中，
+故写的比较匆忙，一者学习go语言开发，二者学习微信公众号开发，主要是为了学习，实现功能，许多欠妥之处，以后慢慢改，
+参考使用了许多前辈的代码，感谢你们,一起学习一起进步！
+</code></pre>
+
+<h2>
+<a id="调用方法" class="anchor" href="#%E8%B0%83%E7%94%A8%E6%96%B9%E6%B3%95" aria-hidden="true"><span class="octicon octicon-link"></span></a>调用方法</h2>
+
+<ul>
+<li>请参看 httpserver.go 便知， 此为调用sdk的例子，可直接编译之，生成可执行文件。</li>
+<li>如果编译httpserver_httprouter.go 则应首先在$GOPATH/src目录下执行go get github.com/julienschmidt/httprouter
+因为这个测试入口调用了httprouter第三方http路由库，用于分流不同域名的请求至相应系统.</li>
+<li>如果编译httpserver_httprouter_negroni.go则应首先在$GOPATH/src目录下执行go get                                            github.com/goincremental/negroni-sessions , go get github.com/julienschmidt/httprouter和 go get github.com/codegangsta/negroni 此为加入negroni web server      middleware及seesion支持的版本.</li>
+</ul>
+
+<h2>
+<a id="测试环境" class="anchor" href="#%E6%B5%8B%E8%AF%95%E7%8E%AF%E5%A2%83" aria-hidden="true"><span class="octicon octicon-link"></span></a>测试环境</h2>
+
+<ul>
+<li>mac osx yosemite 10.10.3</li>
+<li>go version go1.4.2 darwin/amd64</li>
+<li>http隧道至本地开发机：./ngrok -config ngrok.cfg  -subdomain webapp.jinliangyu_weinxin_dev 8080  另一个域名：./ngrok -config ngrok.cfg  -subdomain wechat.jinliangyu_weinxin_dev 8080</li>
+</ul>
+
+<h2>
+<a id="测试说明" class="anchor" href="#%E6%B5%8B%E8%AF%95%E8%AF%B4%E6%98%8E" aria-hidden="true"><span class="octicon octicon-link"></span></a>测试说明</h2>
+
+<ul>
+<li>微信首次接入验证通过.</li>
+<li>被动消息收发测试通过(包括密文模式)</li>
+<li>主动客服接口-发消息（<a href="https://api.weixin.qq.com/cgi-bin/message/custom/send?access_token=ACCESS_TOKEN%EF%BC%89%E6%B5%8B%E8%AF%95%E9%80%9A%E8%BF%87">https://api.weixin.qq.com/cgi-bin/message/custom/send?access_token=ACCESS_TOKEN）测试通过</a>.</li>
+<li>创建菜单测试通过.</li>
+<li>上传下载临时素材测试通过.</li>
+<li>创建临时，永久二维码，获取二维码url测试通过.</li>
+<li>oauth2基础测试通过，可以获取到:code,accesstoken, 最终可以获取到userinfo,如:openid,nickname等. 
+其它接口测试进行中.</li>
+</ul>
+
+<h2>
+<a id="参考代码出处列表" class="anchor" href="#%E5%8F%82%E8%80%83%E4%BB%A3%E7%A0%81%E5%87%BA%E5%A4%84%E5%88%97%E8%A1%A8" aria-hidden="true"><span class="octicon octicon-link"></span></a>参考代码出处列表</h2>
+
+<pre><code>http://blog.csdn.net/luciswe/article/details/45890713
+http://blog.csdn.net/luciswe/article/details/45913053
+http://tonybai.com/2015/04/30/go-and-https/
+https://github.com/bigwhite/experiments/blob/master/gohttps/6-dual-verify-certs/client.go
+https://github.com/sidbusy/weixinmp   //清晰简单
+https://github.com/wizjin/weixin //复杂一些， 因为重写了http路由
+https://github.com/chanxuehong/wechat  //最复杂，更新最快。
+https://github.com/leenanxi/wechat2 //第2复杂， 更新不如上一个快。
+https://github.com/bigwhite/experiments/tree/master/wechat_examples
+https://github.com/k4shifz/Go-WeChat
+http://stackoverflow.com/questions/12122159/golang-how-to-do-a-https-request-with-bad-certificate
+http://www.peterbe.com/plog/my-favorite-go-multiplexer
+搜索引擎，许多blog，不能详尽者，在此一并感谢!
+</code></pre>
+      </section>
+      <footer>
+        <p>Project maintained by <a href="https://github.com/yujinliang">yujinliang</a></p>
+        <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://twitter.com/michigangraham">mattgraham</a></small></p>
+      </footer>
+    </div>
+    <!--[if !IE]><script>fixScale(document);</script><![endif]-->
+    
+  </body>
+</html>
