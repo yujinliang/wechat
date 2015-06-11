@@ -9,8 +9,8 @@ import (
 	"fmt"
 	"time"
 	"errors"
-	"mp/response"
-	"mp/request"
+	"github.com/yujinliang/wechat/mp/response"
+	"github.com/yujinliang/wechat/mp/request"
 	
 )
 

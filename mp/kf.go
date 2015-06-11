@@ -3,10 +3,10 @@ package mp
 
 import (
 	
-	"encoding/json"
 	"log"
-	"mp/response"
-	"mp/accesstoken"
+	"encoding/json"
+	"github.com/yujinliang/wechat/mp/response"
+	"github.com/yujinliang/wechat/mp/accesstoken"
 	
 )
 //用指定客服帐号发消息给客户.

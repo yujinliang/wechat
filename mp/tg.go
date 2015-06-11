@@ -5,7 +5,7 @@ import (
 	
 	"log"
 	"encoding/json"
-	"mp/response"
+	"github.com/yujinliang/wechat/mp/response"
 	
 )
 

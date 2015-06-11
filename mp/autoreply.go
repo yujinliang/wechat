@@ -16,7 +16,7 @@ import (
 	"encoding/binary"
 	"encoding/base64"
 	"encoding/xml"
-	"mp/request"
+	"github.com/yujinliang/wechat/mp/request"
 	
 )
 

@@ -5,7 +5,7 @@ import (
 	"log"
 	"errors"
 	"encoding/json"
-	"mp/response"
+	"github.com/yujinliang/wechat/mp/response"
 	
 )
 //模板消息

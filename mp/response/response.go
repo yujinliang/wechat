@@ -11,10 +11,10 @@ import (
 	"io/ioutil"
 	"net/http"
 	"mime/multipart"
-	//"path/filepath"
 	"time"
 	"log"
-	"mp/accesstoken"
+	"github.com/yujinliang/wechat/mp/accesstoken"
+	
 )
 
 // response from weixinmp when we call weixinmap`api to send or get something.

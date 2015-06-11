@@ -3,11 +3,11 @@ package main
 
 import (
 	
-	"net/http"
 	"log"
-	"mp"
-	"mp/request"
-	"mp/oauth2web"
+	"net/http"
+	"github.com/yujinliang/wechat/mp"
+	"github.com/yujinliang/wechat/mp/request"
+	"github.com/yujinliang/wechat/mp/oauth2web"
 	
 )
 

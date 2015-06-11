@@ -8,10 +8,9 @@ import (
 	"net/url"
 	"encoding/xml"
 	"encoding/base64"
-	//"encoding/json"
-	"mp/request"
-	"mp/accesstoken"
-	"mp/utils"
+	"github.com/yujinliang/wechat/mp/request"
+	"github.com/yujinliang/wechat/mp/accesstoken"
+	"github.com/yujinliang/wechat/mp/utils"
 	
 )
 
