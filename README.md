@@ -1,5 +1,5 @@
 # golang go语言 微信公众号 SDK
-    本人奔四了，老菜鸟程序员，用的语言较杂，皆不精，然对技术摸索多年未成系统，虽用C++开发多年，却始终不得其要，心力憔悴，
+    >>本人奔四了，老菜鸟程序员，用的语言较杂，皆不精，然对技术摸索多年未成系统，虽用C++开发多年，却始终不得其要，心力憔悴，
     几欲放弃，无奈饭碗不敢丢弃，苦寻大道至简之语言，绝望之际，遂意退出IT圈，终遇go语言，重燃希望之火，正努力学习中，
     故写的比较匆忙，一者学习go语言开发，二者学习微信公众号开发，主要是为了学习，实现功能，许多欠妥之处，以后慢慢改，
     参考使用了许多前辈的代码，感谢你们,一起学习一起进步！
@@ -7,7 +7,7 @@
 
 ##调用方法
 
-* 请参看 ./src/httpserver.go 便知， 此为调用sdk的例子，可直接编译之，生成可执行文件。
+* 请参看 httpserver.go 便知， 此为调用sdk的例子，可直接编译之，生成可执行文件。
 * 如果编译httpserver_httprouter.go 则应首先在$GOPATH/src目录下执行go get github.com/julienschmidt/httprouter
     因为这个测试入口调用了httprouter第三方http路由库，用于分流不同域名的请求至相应系统.
 * 如果编译httpserver_httprouter_negroni.go则应首先在$GOPATH/src目录下执行go get                                            github.com/goincremental/negroni-sessions , go get github.com/julienschmidt/httprouter和 go get github.com/codegangsta/negroni 此为加入negroni web server      middleware及seesion支持的版本.
