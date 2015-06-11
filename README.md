@@ -44,6 +44,8 @@
     https://github.com/k4shifz/Go-WeChat
     http://stackoverflow.com/questions/12122159/golang-how-to-do-a-https-request-with-bad-certificate
     http://www.peterbe.com/plog/my-favorite-go-multiplexer
+    Go语言编程，许式伟，吕桂华著
+    Go语言程序设计，英Mark Summerfield著
     Go Web 编程， 谢孟军著
     搜索引擎，许多blog，不能详尽者，在此一并感谢!
 
