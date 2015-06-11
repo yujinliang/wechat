@@ -5,7 +5,7 @@ package wx_pay
 import (
 	
 	"net/url"
-	"mp/utils"
+	"github.com/yujinliang/wechat/mp/utils"
 	
 )
 //参考： http://pay.weixin.qq.com/wiki/doc/api/native.php?chapter=6_4

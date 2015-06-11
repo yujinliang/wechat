@@ -8,7 +8,7 @@ import (
 	"net/http"
 	"io/ioutil"
 	"encoding/xml"
-	"mp/utils"
+	"github.com/yujinliang/wechat/mp/utils"
 	
 )
 
