@@ -6,9 +6,9 @@ import (
 	"fmt"
 	"net/http"
 	"log"
-	"mp"
-	"mp/request"
-	"mp/oauth2web"
+	"github.com/yujinliang/wechat/mp"
+	"github.com/yujinliang/wechat/mp/request"
+	"github.com/yujinliang/wechat/mp/oauth2web"
 	"github.com/julienschmidt/httprouter"
 	
 )
