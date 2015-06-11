@@ -8,9 +8,9 @@
 ##调用方法
 
 * 请参看 ./src/httpserver.go 便知， 此为调用sdk的例子，可直接编译之，生成可执行文件。
-* 如果编译httpserver_httprouter.go 则应首先在./src目录下执行go get github.com/julienschmidt/httprouter
+* 如果编译httpserver_httprouter.go 则应首先在$GOPATH/src目录下执行go get github.com/julienschmidt/httprouter
     因为这个测试入口调用了httprouter第三方http路由库，用于分流不同域名的请求至相应系统.
-* 如果编译httpserver_httprouter_negroni.go则应首先在./src目录下执行go get                                            github.com/goincremental/negroni-sessions , go get github.com/julienschmidt/httprouter和 go get github.com/codegangsta/negroni 此为加入negroni web server      middleware及seesion支持的版本.
+* 如果编译httpserver_httprouter_negroni.go则应首先在$GOPATH/src目录下执行go get                                            github.com/goincremental/negroni-sessions , go get github.com/julienschmidt/httprouter和 go get github.com/codegangsta/negroni 此为加入negroni web server      middleware及seesion支持的版本.
 
 ##测试环境
 
