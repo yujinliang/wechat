@@ -54,5 +54,5 @@
     @Wechat - 2015
     作者: 于金良
     邮箱: htyu_0203_39@sina.com ; 285779289@qq.com
-    HomePage: 
-
+    HomePage: http://yujinliang.github.io/wechat
+    心声：三人行，必有我师.
