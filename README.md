@@ -28,7 +28,7 @@
 * 创建临时，永久二维码，获取二维码url测试通过.
 * oauth2基础测试通过，可以获取到:code,accesstoken, 最终可以获取到userinfo,如:openid,nickname等. 
 * 高级群发接口:预览接口通过； 基于分组群发接口流程通过，只是没有权限所有看不到实际效果.
-* oauth2生成的授权url 与 菜单共用时报错已修复，因为golang json包对marshal时自动对一些字符如:&做了转义，但微信不认。
+* oauth2生成的授权url 与 菜单共用时报错已修复，因为golang json包marshal时自动对一些字符如:&做了转义，但微信不认。
  其它接口测试进行中.
 
 
