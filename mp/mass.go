@@ -5,6 +5,7 @@ import (
 	"encoding/json"
 	"log"
 	"github.com/yujinliang/wechat/mp/response"
+	"github.com/yujinliang/wechat/mp/oauth2web"
 	
 )
 
@@ -225,7 +226,8 @@ func (wx *WeiXin) SendWXCardByGroupID(groupId string, cardId string, is_to_all b
 //基础发送接口
 func (wx *WeiXin) SendAll(url string, msg interface{}) (msgid string, err error) {
 	
-	data, err := json.Marshal(&msg)
+	//data, err := json.Marshal(&msg)
+	data, err := oauth2web.JSONMarshal(&msg, true)
 	if err != nil {
 		
 		log.Println("SendAll marshal failed: ", err)
