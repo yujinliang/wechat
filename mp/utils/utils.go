@@ -18,6 +18,7 @@ import (
 	"crypto/md5"
 	"encoding/xml"
 	"encoding/hex"
+	"encoding/json"
 	"math/rand"
 	
 )
@@ -298,6 +299,26 @@ func GetNonceStr(n int) string {
 	return string(b)
 	
 }	
-
+//注意当把AuthCodeURL生成的url用作菜单的url时，微信服务器端会把”非法字法的错误信息，如：& 被json.marshal转化为\u0026; 可微信不认这个，报\u0026为非法字符！”
+//现在写一个方法将微信认为非法的转义后字符再转化回原字符
+func JSONMarshal(v interface{}, safeEncoding bool) ([]byte, error) {
+	
+	b, err := json.Marshal(v)
+	if err != nil {
+		
+		return nil, err
+		
+	}
+	
+	if safeEncoding {
+		
+		b = bytes.Replace(b, []byte("\\u003c"), []byte("<"), -1)
+		b = bytes.Replace(b, []byte("\\u003e"), []byte(">"), -1)
+		b = bytes.Replace(b, []byte("\\u0026"), []byte("&"), -1)
+	}
+	
+	return b, nil
+	
+}
 
 

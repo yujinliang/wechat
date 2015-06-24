@@ -5,7 +5,7 @@ import (
 	"log"
 	"encoding/json"
 	"github.com/yujinliang/wechat/mp/response"
-	"github.com/yujinliang/wechat/mp/oauth2web"
+	"github.com/yujinliang/wechat/mp/utils"
 	
 )
 
@@ -38,7 +38,7 @@ type MenuButton struct {
 func (wx *WeiXin) CreateMenu(menu *Menu) error {
 	
 	//data, err := json.Marshal(menu)
-	data, err := oauth2web.JSONMarshal(menu, true)
+	data, err := utils.JSONMarshal(menu, true)
 	if err != nil {
 		
 		return err
