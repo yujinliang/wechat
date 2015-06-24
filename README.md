@@ -54,7 +54,7 @@
 ##共同学习
 
     @ Wechat - 2015
-    作者: 老菜鸟
+    作者: 悟空
     邮箱: htyu_0203_39@sina.com ; 285779289@qq.com
     HomePage: http://yujinliang.github.io/wechat
     心声：三人行，必有我师.
