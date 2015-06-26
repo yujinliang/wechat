@@ -30,7 +30,8 @@ func (wx *WeiXin) UploadNews(news []MPNews) (string, error) {
 	}
 	newsMsg.Articles = news
 	
-	data, err := json.Marshal(&newsMsg)
+	//data, err := json.Marshal(&newsMsg)
+	data, err := utils.JSONMarshal(&newsMsg, true)
 	if err != nil {
 		
 		log.Println("UploadNews marshal failed: ", err)
