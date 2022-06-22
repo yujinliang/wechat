@@ -1,20 +1,20 @@
-# golang go语言 微信公众号 SDK
+#golang go语言 微信公众号 SDK
     
 
-##调用方法
+#调用方法
 
 * 请参看 httpserver.go 便知， 此为调用sdk的例子，可直接编译之，生成可执行文件。
 * 如果编译httpserver_httprouter.go 则应首先在$GOPATH/src目录下执行go get github.com/julienschmidt/httprouter
     因为这个测试入口调用了httprouter第三方http路由库，用于分流不同域名的请求至相应系统.
 * 如果编译httpserver_httprouter_negroni.go则应首先在$GOPATH/src目录下执行go get                                            github.com/goincremental/negroni-sessions , go get github.com/julienschmidt/httprouter和 go get github.com/codegangsta/negroni 此为加入negroni web server      middleware及seesion支持的版本.
 
-##测试环境
+#测试环境
 
 * mac osx yosemite 10.10.3
 * go version go1.4.2 darwin/amd64
 * http隧道至本地开发机：./ngrok -config ngrok.cfg  -subdomain webapp.jinliangyu_weinxin_dev 8080  另一个域名：./ngrok -config ngrok.cfg  -subdomain wechat.jinliangyu_weinxin_dev 8080
 
-##测试说明
+#测试说明
 
 * 微信首次接入验证通过.
 * 被动消息收发测试通过(包括密文模式)
@@ -28,7 +28,7 @@
  其它接口测试进行中.
 
 
-##参考代码出处列表
+#参考代码出处列表
 
     http://blog.csdn.net/luciswe/article/details/45890713
     http://blog.csdn.net/luciswe/article/details/45913053
@@ -47,7 +47,7 @@
     Go Web 编程， 谢孟军著
     搜索引擎，许多blog，未能详尽者，在此一并感谢!
 
-##共同学习
+#共同学习
 
     @ Wechat - 2015
     作者: 于金良
