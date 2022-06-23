@@ -47,6 +47,7 @@
     Go Web 编程， 谢孟军著
     搜索引擎，许多blog，未能详尽者，在此一并感谢!
 
+
 #共同学习
 
     @ Wechat - 2015
@@ -56,3 +57,6 @@
     csdn: https://blog.csdn.net/htyu_0203_39
     zhihu: https://www.zhihu.com/people/yujinliang-pure
     心声：一入江湖无踪影，归来依旧少年郎！
+    
+    * 早年写的一个golang学习随笔：
+    https://note.youdao.com/s/M64kuqqT
